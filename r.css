@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(14, 1, 46);
+  color: azure;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header p {
+  font-size: xx-large;
+  margin: 0;
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjust height as needed */
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+  height: 100px;
+}
+
+.images {
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  max-width: 150px; /* Set a maximum width */
+  height: auto;    /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+
+#counts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.c {
+  margin: 0 20px;
+}
+
+#result {
+  background-color: rgb(20, 20, 20);
+  border-radius: 30px;
+  height: 35px;
+  color: white;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: larger;
+  background-color: rgb(56, 56, 84);
+  color: azure;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+
+.images:hover {
+  border: 8px solid #030303; /* Add a border and change its color when hovered */ 
+}
