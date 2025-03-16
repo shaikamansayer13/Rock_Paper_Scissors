@@ -148,3 +148,35 @@ footer {
     font-size: 0.8rem;
   }
 }
+/* Extra Small Devices (≤330px) */
+@media (max-width: 330px) {
+  header p {
+    font-size: 1.3rem; /* Smaller header font */
+  }
+
+  #images {
+    height: 120px; /* Slightly smaller height for images */
+  }
+
+  .images {
+    max-width: 70px; /* Smaller images */
+    margin: 0 5px; /* Less spacing */
+  }
+
+  #counts {
+    flex-direction: column;
+  }
+
+  .c {
+    margin: 5px 0;
+  }
+
+  #result {
+    font-size: 1rem; /* Adjust result font size */
+    padding: 8px 15px;
+  }
+
+  footer {
+    font-size: 0.7rem; /* Smaller footer font */
+  }
+}
