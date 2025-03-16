@@ -24,10 +24,12 @@ main {
   height: 70vh;
 }
 
+/* Images Section */
 #images {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  position: relative; /* Prevent movement */
 }
 
 .images {
@@ -45,6 +47,7 @@ main {
   border: 5px solid #030303;
 }
 
+/* Score Section */
 #counts {
   display: flex;
   justify-content: center;
@@ -56,16 +59,20 @@ main {
   margin: 0 30px;
 }
 
+/* Result Box */
 #result {
   background-color: rgb(20, 20, 20);
   color: white;
   font-size: 1.5rem;
   border-radius: 30px;
   padding: 10px 20px;
-  min-width: 200px;
   text-align: center;
+  min-width: 200px;
+  max-width: 90%; /* Allow resizing on smaller screens */
+  margin-top: 20px;
 }
 
+/* Footer */
 footer {
   background-color: rgb(56, 56, 84);
   color: azure;
@@ -77,36 +84,26 @@ footer {
   font-size: 1rem;
 }
 
-/* Medium Devices (Tablets, 768px) */
+/* Medium Devices (≤768px) */
 @media (max-width: 768px) {
   header p {
     font-size: 2rem;
   }
 
-  #images {
-    flex-wrap: wrap;
-  }
-
   .images {
     max-width: 120px;
-    margin: 10px;
   }
 
   #counts {
     flex-direction: column;
   }
 
-  .c {
-    margin: 10px 0;
-  }
-
   #result {
     font-size: 1.2rem;
-    min-width: 180px;
   }
 }
 
-/* Small Devices (Phones, 480px) */
+/* Small Devices (≤480px) */
 @media (max-width: 480px) {
   header p {
     font-size: 1.5rem;
@@ -125,17 +122,13 @@ footer {
     flex-direction: column;
   }
 
-  .c {
-    margin: 10px 0;
-  }
-
   #result {
     font-size: 1rem;
-    min-width: 150px;
-    padding: 8px 16px;
   }
 
   footer {
     font-size: 0.8rem;
   }
 }
+
+
